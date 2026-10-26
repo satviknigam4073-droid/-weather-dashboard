@@ -1,0 +1,121 @@
+/* Universal Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Dashboard Container Card */
+.weather-container {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Premium Search Controls */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#city-input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+#city-input:focus {
+    border-color: #38bdf8;
+}
+
+#search-btn {
+    padding: 12px 20px;
+    background: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#search-btn:hover {
+    background: #0369a1;
+}
+
+/* Info Display Cards */
+.weather-card {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+#location-name {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+#weather-desc {
+    color: #94a3b8;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.temp-display {
+    font-size: 54px;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Extra Metrics Grid Layout */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
+.metric-item p {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.metric-item h4 {
+    font-size: 16px;
+    color: #f8fafc;
+}
