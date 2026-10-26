@@ -31,5 +31,3 @@ document.getElementById('search-btn').addEventListener('click', function() {
             console.error(error);
         });
 });
-
-
