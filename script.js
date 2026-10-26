@@ -18,6 +18,7 @@ document.getElementById('search-btn').addEventListener('click', function() {
         })
         .then(data => {
             document.getElementById('location-name').innerText = `${data.name}, ${data.sys.country}`;
+            // Fixed line: weather arrays require the [0] index accessor to parse descriptions correctly
             document.getElementById('weather-desc').innerText = data.weather[0].description;
             document.getElementById('temperature').innerText = Math.round(data.main.temp);
             document.getElementById('humidity-val').innerText = `${data.main.humidity}%`;
