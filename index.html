@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enterprise Weather Dashboard</title>
+    <!-- Connects the CSS styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -19,25 +21,27 @@
 
         <!-- Weather Display Card -->
         <div id="weather-result" class="weather-card">
-            <h3 id="location-name">Delhi, IN</h3>
-            <p id="weather-desc">Clear Sky</p>
+            <h3 id="location-name">Enter a City</h3>
+            <p id="weather-desc">Searching live data...</p>
             <div class="temp-display">
-                <span id="temperature">24</span>°C
+                <span id="temperature">--</span>°C
             </div>
             
             <!-- Extra Metrics Layout -->
             <div class="metrics-grid">
                 <div class="metric-item">
                     <p>Humidity</p>
-                    <h4 id="humidity-val">60%</h4>
+                    <h4 id="humidity-val">--%</h4>
                 </div>
                 <div class="metric-item">
                     <p>Wind Speed</p>
-                    <h4 id="wind-val">12 km/h</h4>
+                    <h4 id="wind-val">-- km/h</h4>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Connects the JavaScript backend logic -->
+    <script src="script.js"></script>
 </body>
 </html>
