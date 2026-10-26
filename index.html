@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Weather Dashboard</title>
+</head>
+<body>
+
+    <!-- Main Dashboard Container -->
+    <div class="weather-container">
+        <h2>Weather Dashboard</h2>
+        
+        <!-- Input Search Bar -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Weather Display Card -->
+        <div id="weather-result" class="weather-card">
+            <h3 id="location-name">Delhi, IN</h3>
+            <p id="weather-desc">Clear Sky</p>
+            <div class="temp-display">
+                <span id="temperature">24</span>°C
+            </div>
+            
+            <!-- Extra Metrics Layout -->
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <p>Humidity</p>
+                    <h4 id="humidity-val">60%</h4>
+                </div>
+                <div class="metric-item">
+                    <p>Wind Speed</p>
+                    <h4 id="wind-val">12 km/h</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
